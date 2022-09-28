@@ -1,0 +1,93 @@
+.Cards {
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  left: 20%;
+  width: 80%;
+  height: 33rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.Cards::-webkit-scrollbar {
+  display: none;
+}
+
+.card img {
+  width: 29rem;
+  height: 15rem;
+}
+
+.card:hover {
+  filter: saturate(1);
+}
+
+.card h2 {
+  position: absolute;
+  width: 80%;
+  left: 3rem;
+  text-align: left;
+  padding-top: 10px;
+  font-size: 1.3rem;
+}
+
+.card .git {
+  position: absolute;
+  bottom: 1rem;
+  right: 6rem;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.card .demo {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.card {
+  position: relative;
+  height: 340px;
+  width: 450px;
+  border-radius: 90px 90px 0px 90px;
+  background: rgba(44, 44, 44, 0.123);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 50px;
+  color: azure;
+  filter: drop-shadow(2px 4px 6px black) saturate(0.2);
+  margin-left: 8rem;
+}
+
+.ring {
+  position: absolute;
+}
+
+.ring {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: transparent;
+  border: 50px solid rgba(255, 255, 255, 0.1);
+  bottom: -250px;
+  right: -250px;
+  box-sizing: border-box;
+}
+
+.ring::after {
+  content: "";
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  background: transparent;
+  border: 30px solid rgba(255, 255, 255, 0.1);
+  bottom: -80px;
+  right: -110px;
+  box-sizing: border-box;
+}

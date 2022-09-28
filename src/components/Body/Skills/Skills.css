@@ -1,0 +1,214 @@
+.Skills {
+    background-color: #1E1F21;
+}
+
+.portfolio {
+    background-color: #1E1F21;
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    max-width: 700px;
+    width: 50vw;
+    background: #00000081;
+    padding: 25px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.wrapper1 {
+    width: 40%;
+    min-width: 570px;
+
+}
+
+.container * {
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+h2 {
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.skills:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.rod {
+    position: relative;
+
+    border: 2px solid #0d96e0;
+
+    border-radius: 20px;
+
+}
+
+.rod div {
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+
+
+}
+
+#html-rod {
+    animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill {
+    100% {
+        width: 90%;
+    }
+}
+
+#css-rod {
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill {
+    100% {
+        width: 75%;
+    }
+}
+
+#js-rod {
+    animation: js-fill 2s forwards;
+}
+
+@keyframes js-fill {
+    100% {
+        width: 62%;
+    }
+}
+
+#jQuery-rod {
+    animation: jQuery-fill 2s forwards;
+}
+
+@keyframes jQuery-fill {
+    100% {
+        width: 70%;
+    }
+}
+
+#js-rod {
+    animation: js-fill 2s forwards;
+}
+
+@keyframes js-fill {
+    100% {
+        width: 60%;
+    }
+}
+
+.skill {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    text-align: center;
+    margin: 50px;
+
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    height: 120px;
+    position: absolute;
+    top: 2.3rem;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    left: 2.3rem;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgb(0 0 0 / 20%), inset -4px -4px 6px -1px rgb(255 255 255 / 70%), -0.5px 0.5px 0px rgb(0 0 0 / 15%), 0px 12px 10px -10px rgb(0 0 0 / 5%);
+}
+
+.number {
+    font-weight: 600px;
+    color: rgb(255, 255, 255);
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    animation: anim 2s linear forwards;
+    stroke-dashoffset: 472;
+}
+svg {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.circle1{
+    animation: anim1 2s linear forwards;
+}
+.circle2{
+    animation: anim2 2s linear forwards;
+}
+.circle3{
+    animation: anim3 2s linear forwards;
+}
+
+@keyframes anim1 {
+    100% {
+        stroke-dashoffset: 180;
+    }
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 130;
+    }
+}
+
+
+.circle2 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* // grid-template-rows: 1fr 1fr; */
+}
